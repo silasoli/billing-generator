@@ -14,26 +14,22 @@
   width: 14vh;
 }
 
-.amounts-div-container {
-  display: flex;
+.navbar {
+  width: 100%;
 }
 
-.navbar{
-    width: 100%;
+.tax-regime-check, .agency-check {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4vh;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
-.tax-regime-check {
-    /* margin-right: 5vh; */
-}
-
-#tax-regime-section {
-    margin-bottom: 1vh;
-}
-
-#send-form{
-    width: 45vh;
+#send-form {
+  width: 45vh;
 }
 
 body {
-    background-color: darkgray;
+  background-color: darkgray;
 }
