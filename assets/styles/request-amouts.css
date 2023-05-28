@@ -1,0 +1,27 @@
+#form-amouts {
+  width: 45vh;
+  height: 100%;
+  padding: 0;
+  margin-bottom: 15vh;
+  margin-top: 10vh;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.tax-regime-check {
+    /* margin-right: 5vh; */
+}
+
+#tax-regime-section {
+    margin-bottom: 1vh;
+}
+
+#send-form{
+    width: 45vh;
+}
+
+body {
+    background-color: darkgray;
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/request-amouts.css">
+    <title>Solicitar valores</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <form id="form-amouts" class="container">
+        <h3 id="form-title">Digite os dados do faturamento</h3>
+        <div class="mb-3">
+            <label for="cnpj" class="form-label">CNPJ:</label>
+            <input type="text" class="form-control" id="cnpj">
+        </div>
+
+        <div class="mb-3">
+            <label for="corporate-name" class="form-label">Razão Social:</label>
+            <input type="text" class="form-control" id="corporate-name">
+        </div>
+
+        <section id="amounts">
+            <div class="mb-3">
+                <label>Valores</label>
+            </div>
+            <div class="mb-3">
+                <label for="billing-total" class="form-label"> Faturamento bruto total:</label>
+                <input type="text" class="form-control" id="billing-total">
+            </div>
+            <div class="mb-3">
+                <label>Porcentagens:</label>
+            </div>
+             <div class="mb-3">
+                 <label for="card-percentage" class="form-label">Cartão:</label>
+                 <input type="text" class="form-control" id="card-percentage">
+             </div>
+              <div class="mb-3">
+                  <label for="check-percentage" class="form-label">Cheque:</label>
+                  <input type="text" class="form-control" id="check-percentage">
+              </div>
+               <div class="mb-3">
+                   <label for="ticket-percentage" class="form-label">Boleto/Título:</label>
+                   <input type="text" class="form-control" id="ticket-percentage">
+               </div>
+        </section>
+
+
+        <section id="tax-regime-section">
+            <div>
+                <label>Selecione o Regime tributário:</label>
+            </div>
+            <div class="tax-regime-check">
+                <input class="form-check-input" type="radio" name="tax-regime-check" id="simple" checked>
+                <label class="form-check-label" for="simple">
+                    Simples
+                </label>
+            </div>
+            <div class="tax-regime-check">
+                <input class="form-check-input" type="radio" name="tax-regime-check" id="real-profit">
+                <label class="form-check-label" for="real-profit">
+                    Lucro real
+                </label>
+            </div>
+            <div class="tax-regime-check">
+                <input class="form-check-input" type="radio" name="tax-regime-check" id="presumed-profit">
+                <label class="form-check-label" for="presumed-profit">
+                    Lucro presumido
+                </label>
+            </div>
+            <div class="tax-regime-check">
+                <input class="form-check-input" type="radio" name="tax-regime-check" id="arbitrated-profit">
+                <label class="form-check-label" for="arbitrated-profit">
+                    Lucro arbitrado
+                </label>
+            </div>
+            <div class="tax-regime-check">
+                <input class="form-check-input" type="radio" name="tax-regime-check" id="exempt-immune">
+                <label class="form-check-label" for="exempt-immune">
+                    Isento / Imune
+                </label>
+            </div>
+        </section>
+
+        <div class="mb-3">
+            <label for="location-date" class="form-label">Local e data</label>
+            <input type="email" class="form-control" id="location-date">
+        </div>
+
+        <section id="agency">
+            <div>
+                <label>Os dados abaixo são de preenchimento da agência:</label>
+            </div>
+            <div class="">
+                <input class="form-check-input" type="radio" name="agency" id="simple" checked>
+                <label class="form-check-label" for="simple">
+                    Sim
+                </label>
+            </div>
+            <div class="">
+                <input class="form-check-input" type="radio" name="agency" id="real-profit">
+                <label class="form-check-label" for="real-profit">
+                    Não
+                </label>
+            </div>
+        </section>
+
+        <button id="send-form" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <footer class="footer mt-auto py-3 bg-dark footer fixed-bottom">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
