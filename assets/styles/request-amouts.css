@@ -6,6 +6,18 @@
   margin-top: 10vh;
 }
 
+.amounts-div {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
+  margin-left: 3px;
+  width: 14vh;
+}
+
+.amounts-div-container {
+  display: flex;
+}
+
 .navbar{
     width: 100%;
 }
