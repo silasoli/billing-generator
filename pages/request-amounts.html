@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,46 +39,69 @@
 
 
     <form id="form-amouts" class="container">
-        <h3 id="form-title">Digite os dados do faturamento</h3>
+        <h3 class="mb-4 mt-3 d-flex justify-content-center">Digite os dados do faturamento</h3>
         <div class="mb-3">
             <label for="cnpj" class="form-label">CNPJ:</label>
-            <input type="text" class="form-control" id="cnpj">
+            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
         </div>
 
         <div class="mb-3">
             <label for="corporate-name" class="form-label">Razão Social:</label>
-            <input type="text" class="form-control" id="corporate-name">
+            <input type="text" class="form-control" id="corporate-name" placeholder="Exemplo LTDA">
         </div>
 
-        <section id="amounts">
-            <div class="mb-3">
-                <label>Valores</label>
+        <section>
+            <div>
+                <h5 class="d-flex justify-content-center">Intervalo</h5>
             </div>
-            <div class="mb-3">
-                <label for="billing-total" class="form-label"> Faturamento bruto total:</label>
-                <input type="text" class="form-control" id="billing-total">
+            <div class="interval-div">
+                <label for="initial-interval" class="form-label">Inicio:</label>
+                <input type="text" class="form-control" id="initial-interval" placeholder="janeiro/0000">
             </div>
-            <div class="mb-3">
-                <label>Porcentagens:</label>
-            </div> 
-             <div class="mb-3 amounts-div">
-                 <label for="card-percentage" class="form-label amounts-label">Cartão:</label>
-                 <input type="text" class="form-control amounts-control" id="card-percentage">
-             </div>
-              <div class="mb-3 amounts-div">
-                  <label for="check-percentage" class="form-label amounts-label">Cheque:</label>
-                  <input type="text" class="form-control amounts-control" id="check-percentage">
-              </div>
-               <div class="mb-3 amounts-div">
-                   <label for="ticket-percentage" class="form-label amounts-label">Boleto/Título:</label>
-                   <input type="text" class="form-control amounts-control" id="ticket-percentage">
-               </div>
+            <div class="interval-div">
+                <label for="final-interval" class="form-label">Fim:</label>
+                <input type="text" class="form-control" id="final-interval" placeholder="dezembro/0000">
+            </div>
         </section>
+
+        <section>
+            <div class="mb-3">
+                <h5 class="mb-3 mt-3 d-flex justify-content-center">Prazo Médio de recebimento</h5>
+            </div>
+            <div class="mb-3">
+                <label for="yield" class="form-label">À prazo em dias:</label>
+                <input type="text" class="form-control" id="yield" placeholder="10">
+            </div>
+             <div class="mb-3">
+                 <h5 class="mb-3 mt-3 d-flex justify-content-center">Valores</h5>
+             </div>
+             <div class="mb-3">
+                 <label for="billing-total" class="form-label"> Faturamento bruto total:</label>
+                 <input type="text" class="form-control" id="billing-total" placeholder="10.000,00">
+             </div>
+            <div class="mb-3">
+                <h5 class="mb-3 mt-3 d-flex justify-content-center">Porcentagens</h5>
+            </div>
+            <div class="amounts-div">
+                <label for="card-percentage" class="form-label amounts-label">Cartão:</label>
+                <input type="text" class="form-control amounts-control" id="card-percentage" placeholder="10">
+            </div>
+            <div class="amounts-div">
+                <label for="check-percentage" class="form-label amounts-label">Cheque:</label>
+                <input type="text" class="form-control amounts-control" id="check-percentage" placeholder="20">
+            </div>
+            <div class="amounts-div">
+                <label for="ticket-percentage" class="form-label amounts-label">Boleto/Título:</label>
+                <input type="text" class="form-control amounts-control" id="ticket-percentage" placeholder="70">
+            </div>
+        </section>
+
+
 
 
         <section id="tax-regime-section" class="mb-2">
             <div>
-                <label>Selecione o Regime tributário:</label>
+                <h5 class="mb-3 mt-3 d-flex justify-content-center">Selecione o Regime tributário:</h5>
             </div>
             <div class="tax-regime-check">
                 <input class="form-check-input" type="radio" name="tax-regime-check" id="simple" checked>
@@ -113,8 +136,10 @@
         </section>
 
         <div class="mb-3">
-            <label for="location-date" class="form-label">Local e data</label>
-            <input type="email" class="form-control" id="location-date">
+            <h5 class="mb-3 mt-3 d-flex justify-content-center">
+                <label for="location-date" class="form-label">Local e data</label>
+            </h5>
+            <input type="email" class="form-control" id="location-date" placeholder="Feira de Santana - 01/01/2021">
         </div>
 
         <section id="agency" class="mb-2">
@@ -139,7 +164,7 @@
     </form>
 
 
-    <footer class="footer mt-auto py-3 bg-dark footer fixed-bottom">
+    <footer class="footer mt-auto py-3 bg-dark footer">
         <div class="container">
             <span class="text-muted">Place sticky footer content here.</span>
         </div>
