@@ -42,12 +42,12 @@
         <h3 class="mb-4 mt-3 d-flex justify-content-center">Digite os dados do faturamento</h3>
         <div class="mb-3">
             <label for="cnpj" class="form-label">CNPJ:</label>
-            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+            <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00">
         </div>
 
         <div class="mb-3">
             <label for="corporate-name" class="form-label">Razão Social:</label>
-            <input type="text" class="form-control" id="corporate-name" placeholder="Exemplo LTDA">
+            <input type="text" class="form-control" id="corporate-name" name="corporate-name" placeholder="Exemplo LTDA">
         </div>
 
         <section>
@@ -56,11 +56,11 @@
             </div>
             <div class="interval-div">
                 <label for="initial-interval" class="form-label">Inicio:</label>
-                <input type="text" class="form-control" id="initial-interval" placeholder="janeiro/0000">
+                <input type="text" class="form-control" id="initial-interval" name="initial-interval" placeholder="janeiro/0000">
             </div>
             <div class="interval-div">
                 <label for="final-interval" class="form-label">Fim:</label>
-                <input type="text" class="form-control" id="final-interval" placeholder="dezembro/0000">
+                <input type="text" class="form-control" id="final-interval" name="final-interval" placeholder="dezembro/0000">
             </div>
         </section>
 
@@ -70,29 +70,32 @@
             </div>
             <div class="mb-3">
                 <label for="yield" class="form-label">À prazo em dias:</label>
-                <input type="text" class="form-control" id="yield" placeholder="10">
+                <input type="text" class="form-control" id="yield" name="yield" placeholder="10">
             </div>
              <div class="mb-3">
                  <h5 class="mb-3 mt-3 d-flex justify-content-center">Valores</h5>
              </div>
              <div class="mb-3">
                  <label for="billing-total" class="form-label"> Faturamento bruto total:</label>
-                 <input type="text" class="form-control" id="billing-total" placeholder="10.000,00">
+                 <input type="text" class="form-control" id="billing-total" name="billing-total" placeholder="10.000,00">
              </div>
             <div class="mb-3">
                 <h5 class="mb-3 mt-3 d-flex justify-content-center">Porcentagens</h5>
             </div>
             <div class="amounts-div">
                 <label for="card-percentage" class="form-label amounts-label">Cartão:</label>
-                <input type="text" class="form-control amounts-control" id="card-percentage" placeholder="10">
+                <input type="text" class="form-control amounts-control" id="card-percentage" name="card-percentage"
+                    placeholder="10">
             </div>
             <div class="amounts-div">
                 <label for="check-percentage" class="form-label amounts-label">Cheque:</label>
-                <input type="text" class="form-control amounts-control" id="check-percentage" placeholder="20">
+                <input type="text" class="form-control amounts-control" id="check-percentage" name="check-percentage"
+                    placeholder="20">
             </div>
             <div class="amounts-div">
                 <label for="ticket-percentage" class="form-label amounts-label">Boleto/Título:</label>
-                <input type="text" class="form-control amounts-control" id="ticket-percentage" placeholder="70">
+                <input type="text" class="form-control amounts-control" id="ticket-percentage" name="ticket-percentage"
+                    placeholder="70">
             </div>
         </section>
 
@@ -104,32 +107,32 @@
                 <h5 class="mb-3 mt-3 d-flex justify-content-center">Selecione o Regime tributário:</h5>
             </div>
             <div class="tax-regime-check">
-                <input class="form-check-input" type="radio" name="tax-regime-check" id="simple" checked>
-                <label class="form-check-label" for="simple">
+                <input class="form-check-input" type="radio" name="tax-regime-check" value="simple" checked>
+                <label class="form-check-label">
                     Simples
                 </label>
             </div>
             <div class="tax-regime-check">
-                <input class="form-check-input" type="radio" name="tax-regime-check" id="real-profit">
-                <label class="form-check-label" for="real-profit">
+                <input class="form-check-input" type="radio" name="tax-regime-check" value="real-profit">
+                <label class="form-check-label">
                     Lucro real
                 </label>
             </div>
             <div class="tax-regime-check">
-                <input class="form-check-input" type="radio" name="tax-regime-check" id="presumed-profit">
-                <label class="form-check-label" for="presumed-profit">
+                <input class="form-check-input" type="radio" name="tax-regime-check" value="presumed-profit">
+                <label class="form-check-label">
                     Lucro presumido
                 </label>
             </div>
             <div class="tax-regime-check">
-                <input class="form-check-input" type="radio" name="tax-regime-check" id="arbitrated-profit">
-                <label class="form-check-label" for="arbitrated-profit">
+                <input class="form-check-input" type="radio" name="tax-regime-check" value="arbitrated-profit">
+                <label class="form-check-label">
                     Lucro arbitrado
                 </label>
             </div>
             <div class="tax-regime-check">
-                <input class="form-check-input" type="radio" name="tax-regime-check" id="exempt-immune">
-                <label class="form-check-label" for="exempt-immune">
+                <input class="form-check-input" type="radio" name="tax-regime-check" value="exempt-immune">
+                <label class="form-check-label">
                     Isento / Imune
                 </label>
             </div>
@@ -139,7 +142,8 @@
             <h5 class="mb-3 mt-3 d-flex justify-content-center">
                 <label for="location-date" class="form-label">Local e data</label>
             </h5>
-            <input type="email" class="form-control" id="location-date" placeholder="Feira de Santana - 01/01/2021">
+            <input type="email" class="form-control" id="location-date" name="location-date"
+                placeholder="Feira de Santana - 01/01/2021">
         </div>
 
         <section id="agency" class="mb-2">
@@ -147,14 +151,14 @@
                 <label>Os dados abaixo são de preenchimento da agência:</label>
             </div>
             <div class="agency-check">
-                <input class="form-check-input" type="radio" name="agency" id="simple" checked>
-                <label class="form-check-label" for="simple">
+                <input class="form-check-input" type="radio" name="agency" value="agency" checked>
+                <label class="form-check-label">
                     Sim
                 </label>
             </div>
             <div class="agency-check">
-                <input class="form-check-input" type="radio" name="agency" id="real-profit">
-                <label class="form-check-label" for="real-profit">
+                <input class="form-check-input" type="radio" name="agency" value="not-agency">
+                <label class="form-check-label">
                     Não
                 </label>
             </div>
@@ -172,6 +176,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="../assets/scripts/request-amounts.js"></script>
 </body>
 
 </html>
