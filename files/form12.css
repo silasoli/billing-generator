@@ -1,0 +1,626 @@
+body { 
+	font-family: Arial;
+	font-size: 12pt;	
+}
+
+TD.item {
+		COLOR: #0038A8;
+		vertical-align: top;
+}
+TD.itemPb {
+		COLOR: #000000;
+		vertical-align: top;
+}
+TD.caixaBgAzul {
+		COLOR: #0038a8;
+		background-color: #e7ebf7;
+}
+TD.caixaBgAzulPb {
+		COLOR: #0038a8;
+		background-color: #f4f4f4;
+}
+
+TD.caixaBgAmarelo {
+		COLOR: #0038a8;
+		background-color: #FEF8D0;
+}
+
+TD.itemMiddle {
+		COLOR: #0038A8;
+		vertical-align: middle;
+}
+TD.itemMiddlePb {
+		COLOR: #000000;
+		vertical-align: middle;
+}
+
+TD.itemBottom {
+		COLOR: #0038A8;
+		vertical-align: bottom;
+}
+TD.itemBottomPb {
+		COLOR: #000000;
+		vertical-align: bottom;
+}
+
+TD.itemBgAzul {
+		COLOR: #0038A8;
+		background-color: #E7EBF7;
+}
+TD.itemBgAzulPb {
+		COLOR: #000000;
+		background-color: #f4f4f4;
+}
+.itemBgAmarelo {
+		COLOR: #0038A8;
+		background-color: #FEF8D0
+}
+
+.itemBgAmareloPb {
+		COLOR: #000000;
+		background-color: #d9d9d9;
+}
+
+.itemBold {
+		font-weight: bold;
+		COLOR: #0038A8;		
+}
+.itemBoldPb {
+		COLOR: #000000;		
+		font-weight: bold;
+}
+
+TD.caixaInput {
+		COLOR: #0038A8;		
+		vertical-align: bottom;
+}
+
+TD.caixaInputPb {
+		COLOR: #000000;
+		vertical-align: bottom;
+}
+
+TD.caixaInputTop {
+		COLOR: #0038A8;		
+		vertical-align: top;
+}
+
+TD.caixaInputTopPb {
+		COLOR: #000000;		
+		vertical-align: top;
+}
+
+TD.resultadoInput {
+		COLOR: #000000;
+		vertical-align: bottom;
+}
+
+TD.resultadoInputTop {
+		COLOR: #000000;
+		vertical-align: top;
+}
+
+TD.resultadoInputAzul {
+	COLOR: #0038A8;
+	vertical-align: bottom;
+	font-weight : bold;
+}
+
+TD.resultadoInputAzulPb {
+	COLOR: #000000;
+	vertical-align: bottom;
+	font-weight : bold;
+}
+
+TD.resultadoTop {
+		COLOR: #000000;
+		vertical-align: top;
+}
+
+TD.resultadoMiddle {
+	COLOR: #000000;
+	vertical-align: middle;
+}
+
+TD.resultadoInputBgAzul {
+		COLOR: #000000;
+		background-color: #e7ebf7;
+}
+
+TD.resultadoInputBgAzulPb {
+		COLOR: #000000;
+		background-color: #f4f4f4;
+}
+
+.resultadoInputBgAmarelo {
+		COLOR: #000000;
+		background-color: #fef8d0;
+}
+
+.resultadoInputBgAmareloPb {
+		COLOR: #000000;
+		background-color: #f4f4f4;
+}
+
+.obsBgAzul {
+		COLOR: #0038A8;
+		background-color: #e7ebf7;
+}
+.obsBgAzulPb {
+		COLOR: #000000;
+		background-color: #f4f4f4;
+		font-weight: bold;
+}
+
+.obsBgAmarelo {
+		COLOR: #0038A8;
+		background-color: #FEF8D0;
+}
+
+.obsBgAmareloPb {
+		COLOR: #000000;
+		background-color: #d9d9d9;
+}
+
+TD.texto {
+		COLOR: #0038a8;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+TD.textoPb {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+TD.textoEspecial {
+		COLOR: #0038a8; 
+		text-align: justify;
+}
+TD.textoEspecialPb {
+		COLOR: #000; 
+		text-align: justify;
+}
+.textoBold {
+	COLOR: #0038a8;
+	text-align: justify;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+
+TD.textoNove {
+		COLOR: #0038a8;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+TD.textoDez {
+		COLOR: #0038a8;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+TD.textoDezPb {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+TD.textoDoze {
+		COLOR: #0038a8;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+TD.textoDozePb {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+.textoDezEnt {
+		COLOR: #0038a8;
+		text-align: justify;
+		letter-spacing: 0px;
+		line-height: 23px;
+}
+.textoDezEntPb {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+		line-height: 23px;
+}
+
+TD.textoMenor {
+		COLOR: #0038a8;
+		text-align: justify;
+}
+TD.textoMenorPb {
+		COLOR: #000000;
+		text-align: justify;
+}
+
+TD.TextoBgAmarelo {
+		COLOR: #0038A8;
+		background-color: #FEF8D0;
+		text-align: justify;
+}
+TD.TextoBgAmareloPb {
+		COLOR: #000000;
+		background-color: #d9d9d9;
+		text-align: justify;
+}
+
+TD.TextoBgAmareloSemJustificado {
+	COLOR: #0038A8;
+	background-color: #FEF8D0;
+	text-align: left;
+}
+
+.textoSemJustificado {
+		COLOR: #0038A8;
+		letter-spacing: 0px;
+}
+.textoSemJustificadoPb {
+		COLOR: #000000;
+		letter-spacing: 0px;
+}
+
+.nomeFormBold {
+		COLOR: #0038A8;
+		text-align: right;
+		font-weight: bold;
+}
+.nomeFormBoldPb {
+		COLOR: #000000;
+		text-align: right;
+		font-weight: bold;		
+}
+
+.nomeFormSemBold {
+		COLOR: #0038a8;
+		text-align: right;
+}
+.nomeFormSemBoldPb {
+		COLOR: #000000;
+		text-align: right;
+}
+
+
+.tituloItens {
+		COLOR: #0038A8;
+		font-weight: bold;
+}
+.tituloItensPb {
+		COLOR: #000000;
+		font-weight: bold;
+}
+
+.tituloItensSemNegrito {
+		color: #0038A8;
+		padding: 2px;
+}
+.tituloItensSemNegritoPb {
+		color: #000000;
+}
+.subTituloItens {
+		color: #0038A8;
+}
+.subTituloItensPb {
+		color: #000000;
+		font-weight: bold;		
+}
+
+.alerta {
+		COLOR: #EA0000;
+		font-weight: bold;
+}
+
+.novidades {
+	FONT-size: 13px;
+	COLOR: #EA0000;
+}
+
+.mensagem {
+	FONT-size: 14px;
+	COLOR: #EA0000;
+	font-weight: bold;
+}
+
+.radioBranco { background-color: #FFFFFF }
+.radioAzul { background-color: #E7EBF7 }
+.radioAmarelo { background-color: #FEF8D0 }
+p.quebra { page-break-after: always;}
+br.quebraPagina { page-break-before: always; line-height:2px;}
+a.quebra { page-break-after: always;}
+select {
+		color: #000000;
+		border: 0px groove;
+}
+
+input {
+		font-size: 10px;
+		COLOR: #000000;
+		background-color: #f3f3f3;
+		border: #CCCCCC;
+		border-top-width: 1px;
+		border-right-width: 1px;
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+}
+
+textarea {
+		COLOR: #000000;
+		background-color: #f3f3f3;
+		border: 1px #999999 outset;
+		text-align: left;
+		word-spacing: normal;
+}
+
+
+
+.ajudaAmarelo  {
+color: #0038a8; 
+background-color: #FEF8D0;
+border: 1px #0038a8 solid; */
+}
+.ajudaAzul  {
+*/
+color: #0038a8; 
+background-color: #e7ebf7;
+border: 1px #0038a8 solid; 
+*/
+}
+
+.botao  {
+*/
+font-size: 10pt;
+color: #000000; 
+background-color: #FFFFFF;
+border: 1px #000000 solid; */
+}
+.menuPreto { 
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	}
+.menuPreto:hover { 
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+	}
+.menuAzulEscuro { 
+	font-weight: bold;
+	color: #22407B;
+	text-decoration: none;
+	}
+.menuAzulEscuro:hover { 
+	font-weight: bold;
+	color: #22407B;
+	text-decoration: underline;
+	}
+.menuAzulClaro { 
+	font-weight: bold;
+	color: #006FA8;
+	text-decoration: none;
+	}
+.menuAzulClaro:hover { 
+	font-weight: bold;
+	color: #006FA8;
+	text-decoration: underline;
+	}
+.txtPreto { 
+	color: #000000;
+	text-decoration: none;
+	}
+.txtPretoJustify { 
+	color: #000000;
+	text-decoration: none;
+	text-align: justify
+	}	
+.txtPreto:hover { 
+	color: #000000;
+	text-decoration: underline;
+	}
+.txtBranco { 
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+.txtAzulEscuro { 
+	color: #22407B;
+	text-decoration: none;
+	}
+.txtAzulEscuro:hover { 
+	color: #22407B;
+	text-decoration: underline;
+	}
+.txtAzulClaro { 
+	color: #006FA8;
+	text-decoration: none;
+	}
+.txtAzulClaro:hover { 
+	color: #006FA8;
+	text-decoration: underline;
+	}
+.linkAzulEscuro { 
+	color: #22407B;
+	text-decoration: underline;
+	}
+.linkAzulEscuro:hover { 
+	color: #22407B;
+	text-decoration: underline;
+	}
+.linkAzulClaro { 
+	color: #006FA8;
+	text-decoration: underline;
+	}
+.titulo { 
+	font-size: 16px; 
+	color: #22407B;
+	text-decoration: none;
+	font-weight: bold;
+	}
+.titulo:hover { 
+	font-size: 15px; 
+	color: #22407B;
+	text-decoration: underline;
+	font-weight: bold;
+	}
+	
+TD.relDigitalizacao {
+		font-size: 14px; 
+		COLOR: #000000;
+		vertical-align: bottom;
+}
+
+TD.relDigitalizacaoTexto {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+TD.relDigitalizacaoRodape {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+TD.rodapePreto {
+		COLOR: #000000;
+		text-align: justify;
+		letter-spacing: 0px;
+}
+
+TD.etiqueta36Bold {
+	font-size: 30px; 
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta36SemBold {
+	font-size: 30px; 
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+TD.etiqueta30Bold {
+	font-size: 30px; 
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta30SemBold {
+	font-size: 30px; 
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+TD.etiqueta25Bold {
+	font-size: 25px; 
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta22BoldUnderline {
+	font-size: 22px; 
+	COLOR: #000000;
+	font-weight : bold;
+	text-decoration: underline;
+}
+
+TD.etiqueta22Bold {
+	font-size: 22px;
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta19Bold {
+	font-size: 19px;
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta19SemBold {
+	font-size: 19px;
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+TD.etiqueta17Bold {
+	font-size: 17px;
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta17SemBold {
+	font-size: 17px;
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+TD.etiqueta15Bold {
+	font-size: 15px;
+	COLOR: #000000;
+	font-weight : bold;
+}
+
+TD.etiqueta15SemBold {
+	font-size: 15px;
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+TD.relatorio10Bold {
+	COLOR: #000000;
+	font-weight: bold;
+}
+
+td.relatorio9Bold {
+	COLOR: #000000;
+	font-weight: bold;
+}
+
+.relatorio9SemBold {
+	COLOR: #000000;
+	vertical-align: bottom;
+}
+
+/* inclusão de novos estilos para novos formulários
+/* Frederico B. Guerra  */
+
+.rodape .item {
+	font-size: 9pt;
+}
+
+.rodape .itemPb {
+	font-size: 9pt;
+	color: #000;
+}
+
+
+TD.textoAzul {
+		COLOR: #0038a8;
+		letter-spacing: 0px;
+		padding: 2px;
+}
+
+.fundoAmarelo{
+		background-color: #FEF8D0
+}
+
+.nomeFormBoldTitulo {
+		COLOR: #0038A8;
+		text-align: center;
+}
+div#qTip {
+  padding: 12px;
+  border: 1px solid #0038a8;
+  display: none;
+  background: #FEF8D0;
+  color: #0038a8;
+  text-align: left;
+  position: absolute;
+  z-index: 1000;
+}
+.vermelho {
+		COLOR: red;
+		text-align: justify;
+		letter-spacing: 0px;
+}

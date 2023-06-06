@@ -1,0 +1,1078 @@
+<!-- saved from url=(0047)https://www45.bb.com.br/fmc/frm/fw0711677_1.jsp -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Relação de Faturamento Pessoa Jurídica</title>
+    <script>
+        // function timeOut() {
+        //     setTimeout('', 1000);
+        // }
+
+        // function desformataCnpj(cnpj) {
+        //     if (cnpj == "") {
+        //         cnpj = '0';
+        //     }
+        //     cnpj = cnpj.replace(/\./g, '');
+        //     cnpj = cnpj.replace(/\-/g, '');
+        //     cnpj = cnpj.replace("/", '');
+        //     return parseFloat(cnpj);
+        // }
+
+        // function formataCnpj(cnpj) {
+        //     if (cnpj == "") {
+        //         cnpj = '0';
+        //     }
+        //     cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2");
+        //     cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+        //     cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2");
+        //     cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2");
+        //     return cnpj;
+        // }
+
+        // function desformataValor(valor) {
+        //     if (valor == "") {
+        //         valor = '0';
+        //     }
+        //     valor = valor.replace(/\./g, '');
+        //     valor = valor.replace(/,/g, '.');
+        //     return parseFloat(valor);
+        // }
+
+        // function formataValor(num) {
+        //     return num.toFixed(2).replace(".", ",").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+        // }
+
+        // function somaA() {
+        //     total = 0;
+        //     for (i = 0; i < 12; i++) {
+        //         nome = 'a_vista' + i;
+        //         if (document.getElementById(nome).value != '') {
+        //             total = total + desformataValor(document.getElementById(nome).value);
+        //         }
+        //     }
+        //     document.getElementById('valor_A').value = formataValor(total);
+        //     if (validaMesAno('mesAno') == 12) {
+        //         somaTotal();
+        //     } else {
+        //         document.getElementById('faturamentoBruto').value = '';
+        //     }
+        // }
+
+        // function somaB() {
+        //     total = 0;
+        //     for (i = 0; i < 12; i++) {
+        //         nome = 'a_prazo' + i;
+        //         if (document.getElementById(nome).value != '') {
+        //             total = total + desformataValor(document.getElementById(nome).value);
+        //         }
+        //     }
+        //     document.getElementById('valor_B').value = formataValor(total);
+        //     if (validaMesAno('mesAno') == 12) {
+        //         somaTotal();
+        //     } else {
+        //         document.getElementById('faturamentoBruto').value = '';
+        //     }
+        // }
+
+        // function validaCampos(nomeCampo) {
+        //     if (document.getElementById(nomeCampo).value == '') {
+        //         document.getElementById('faturamentoBruto').value = '';
+        //     }
+        // }
+
+        // function validaMesAno(nome) {
+        //     var cont = 0;
+        //     for (i = 0; i < 12; i++) {
+        //         nomeCampo = nome + i;
+        //         valor = desformataValor(document.getElementById(nomeCampo).value);
+        //         if (document.getElementById(nomeCampo).value != '' && (validaAVista(i) || validaAPrazo(i))) {
+        //             cont = cont + 1;
+        //         }
+        //     }
+        //     return cont;
+        // }
+
+        // function validaAVista(posicaoValidar) {
+
+        //     var nomeAVista = 'a_vista' + posicaoValidar;
+        //     if (document.getElementById(nomeAVista).value != '' && desformataValor(document.getElementById(nomeAVista)
+        //             .value) > 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+
+        // }
+
+        // function validaAPrazo(posicaoValidar) {
+
+        //     var nomeAPrazo = 'a_prazo' + posicaoValidar;
+        //     if (document.getElementById(nomeAPrazo).value != '' && desformataValor(document.getElementById(nomeAPrazo)
+        //             .value) > 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+
+        // }
+
+        // function somaTotal() {
+        //     total = 0;
+        //     total = desformataValor(document.getElementById('valor_A').value) + desformataValor(document.getElementById(
+        //         'valor_B').value);
+        //     document.getElementById('faturamentoBruto').value = formataValor(total);
+        // }
+
+        // function mascaraCNPJ() {
+
+        //     var cnpjSemFormatacao = desformataCnpj(document.getElementById('cnpj').value).toString();
+        //     var quantidadeZeroPreencher = 14 - cnpjSemFormatacao.length;
+        //     if (cnpjSemFormatacao.length < 14) {
+        //         for (i = 0; i < quantidadeZeroPreencher; i++) {
+        //             cnpjSemFormatacao = '0' + cnpjSemFormatacao;
+        //         }
+        //     }
+
+        //     var cnpjFormatado = formataCnpj(cnpjSemFormatacao);
+        //     document.getElementById('cnpj').value = cnpjFormatado;
+
+        // }
+    </script>
+    <link rel="stylesheet" href="../files/form12.css" type="text/css">
+    <link rel="stylesheet" href="../files/form12.css" type="text/css">
+
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        TD.item {
+            COLOR: #0038A8;
+            vertical-align: top;
+            font-size: 10pt;
+        }
+
+        TD.caixaInput {
+            COLOR: #0038A8;
+            vertical-align: bottom;
+            font-size: 11pt;
+        }
+
+        TD.caixaInput input {
+            font-size: 11px;
+        }
+
+        TD.texto {
+            COLOR: #0038a8;
+            text-align: justify;
+            letter-spacing: 0px;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+    onload="main(&#39;protocolo&#39;), timeOut();">
+    <table width="656" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <table width="646" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" width="213" valign="top" height="36"><img src="../files/marcaBB2006.gif"
+                                        width="213" height="36"></td>
+                                <td valign="top" class="nomeFormBold">Relação de Faturamento Pessoa Jurídica</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="646" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td width="10"><img src="../files/imgpxlbra.gif" width="10" height="1"></td>
+                                <td width="646">
+                                    <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="25"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <form action="https://www45.bb.com.br/fmc/frm/fw0711677_2.jsp" method="post"
+                                        name="form">
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0"
+                                            style="margin-bottom: 0.5em;">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj42.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item">
+                                                        <font size="2">Razão Social</font>
+                                                    </td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj42.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item">CNPJ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="empresa" size="70"
+                                                            maxlength="60"></td>
+                                                    <td class="caixaInput"><input type="text" name="cnpj" id="cnpj"
+                                                            size="16"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10" height="3" valign="top"><img src="../files/10.gif"
+                                                            width="10" height="1"></td>
+                                                    <td width="456" height="3" valign="top"><img src="../files/456.gif"
+                                                            width="456" height="1"></td>
+                                                    <td width="10" height="3" valign="top"><img src="../files/10.gif"
+                                                            width="10" height="1"></td>
+                                                    <td width="170" height="3" valign="top"><img src="../files/170.gif"
+                                                            width="170" height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="TituloItens">Relação de faturamento - últimos 12 meses
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="texto"><i>Para empresas com menos de 12 meses de
+                                                            existência: multiplique o faturamento médio mensal dos meses
+                                                            que está em funcionamento por 12.<br>
+                                                            Exemplo: empresa funciona há 4 meses: some os faturamentos
+                                                            recebidos, divide por 4 e multiplique por 12 e desconsidere
+                                                            os meses não faturados</i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="6"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <input type="hidden" name="param" value="">
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj40.gif"
+                                                            width="5" height="35"></td>
+                                                    <td class="item">Mês/ano</td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu40.gif"
+                                                            width="1" height="35"></td>
+                                                    <td class="item">À vista - R$</td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu40.gif"
+                                                            width="1" height="35"></td>
+                                                    <td class="item">À prazo - R$</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno0"
+                                                            id="mesAno0" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista0"
+                                                            id="a_vista0" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo0"
+                                                            id="a_prazo0" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno1"
+                                                            id="mesAno1" size="18"
+                                                            onkeypress="return mask(true, event, this, &#39;##/####&#39;);"
+                                                            onblur="validaCampos(&#39;mesAno1&#39;)"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista1"
+                                                            id="a_vista1" size="18" style="text-align:right" 0></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo1"
+                                                            id="a_prazo1" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno2"
+                                                            id="mesAno2" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista2"
+                                                            id="a_vista2" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo2"
+                                                            id="a_prazo2" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno3"
+                                                            id="mesAno3" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista3"
+                                                            id="a_vista3" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo3"
+                                                            id="a_prazo3" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno4"
+                                                            id="mesAno4" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista4"
+                                                            id="a_vista4" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo4"
+                                                            id="a_prazo4" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno5"
+                                                            id="mesAno5" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista5"
+                                                            id="a_vista5" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo5"
+                                                            id="a_prazo5" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno6"
+                                                            id="mesAno6" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista6"
+                                                            id="a_vista6" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo6"
+                                                            id="a_prazo6" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno7"
+                                                            id="mesAno7" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista7"
+                                                            id="a_vista7" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo7"
+                                                            id="a_prazo7" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno8"
+                                                            id="mesAno8" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista8"
+                                                            id="a_vista8" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo8"
+                                                            id="a_prazo8" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno9"
+                                                            id="mesAno9" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista9"
+                                                            id="a_vista9" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo9"
+                                                            id="a_prazo9" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno10"
+                                                            id="mesAno10" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista10"
+                                                            id="a_vista10" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo10"
+                                                            id="a_prazo10" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj25.gif"
+                                                            width="5" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu25.gif"
+                                                            width="1" height="25"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="mesAno11"
+                                                            id="mesAno11" size="18"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_vista11"
+                                                            id="a_vista11" size="18" style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="a_prazo11"
+                                                            id="a_prazo11" size="18" style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="208"><img src="../files/208.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0"
+                                            style="background-color: #e7ebf7;">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj40.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu40.gif"
+                                                            width="1" height="40"></td>
+                                                    <td class="item"></td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu40.gif"
+                                                            width="1" height="40"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="itemBgAzul">Total</td>
+                                                    <td class="caixaInput"><input type="text" name="valor_A"
+                                                            id="valor_A" size="18" readonly="true"
+                                                            style="text-align:right"></td>
+                                                    <td class="caixaInput"><input type="text" name="valor_B"
+                                                            id="valor_B" size="18" readonly="true"
+                                                            style="text-align:right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10"><img src="../files/10.gif" width="10" height="1">
+                                                    </td>
+                                                    <td width="108"><img src="../files/108.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="120"><img src="../files/120.gif" width="208" height="1">
+                                                    </td>
+                                                    <td width="6"><img src="../files/6.gif" width="6" height="1"></td>
+                                                    <td width="120"><img src="../files/120.gif" width="208" height="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="6"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj42.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item">Faturamento bruto total - últimos 12 meses - R$
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="faturamentoBruto"
+                                                            id="faturamentoBruto" size="18" maxlength="30"
+                                                            style="text-align: right;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10" height="3" valign="top"><img src="../files/10.gif"
+                                                            width="10" height="1"></td>
+                                                    <td width="636" height="3" valign="top"><img src="../files/313.gif"
+                                                            width="57%" height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!-- 	           NOVA TABELA -->
+                                        <table width="646" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="item" width="61%">Percentual do total do faturamento à
+                                                        prazo que somados representam 100%.</td>
+                                                    <td class="item">Prazo Médio de recebimento à prazo em dias:</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="390" cellspacing="0" cellpadding="0" border="0"
+                                            style="display: inline-flex;">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj37.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item" width="30%">Cartão - %</td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu37.gif"
+                                                            width="1" height="40"></td>
+                                                    <td class="item" width="30%">Cheque - %</td>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/azu37.gif"
+                                                            width="1" height="40"></td>
+                                                    <td class="item" width="30%">Boleto/Título - %</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="cartao" size="18"
+                                                            maxlength="3"></td>
+                                                    <td class="caixaInput"><input type="text" name="cheque" size="18"
+                                                            maxlength="3"></td>
+                                                    <td class="caixaInput"><input type="text" name="boleto" size="18"
+                                                            maxlength="3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="10"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="130"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="10"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="130"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="10"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="130"
+                                                            height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="335" cellspacing="0" cellpadding="0" border="0"
+                                            style="display: inline;">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj40.gif"
+                                                            width="5" height="40"></td>
+                                                    <td class="item"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input name="prazoMedio" size="18"
+                                                            maxlength="3"
+                                                            type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="10"
+                                                            height="1"></td>
+                                                    <td height="3" valign="top"><img src="../files/1.gif" width="130"
+                                                            height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom"><img src="../files/lrj38.gif"
+                                                            width="5" height="40"></td>
+                                                    <td colspan="4" class="item">Regime tributário.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="radio" name="regimeTributario"
+                                                            value="simples" class="radioBranco">Simples</td>
+                                                    <td class="caixaInput"><input type="radio" name="regimeTributario"
+                                                            value="lucroReal" class="radioBranco">Lucro real</td>
+                                                    <td class="caixaInput"><input type="radio" name="regimeTributario"
+                                                            value="lucroPresumido" class="radioBranco">Lucro presumido
+                                                    </td>
+                                                    <td class="caixaInput"><input type="radio" name="regimeTributario"
+                                                            value="lucroArbitrado" class="radioBranco">Lucro arbitrado
+                                                    </td>
+                                                    <td class="caixaInput"><input type="radio" name="regimeTributario"
+                                                            value="isento_imune" class="radioBranco">Isento / Imune</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="10" height="3" valign="top"><img src="../files/10.gif"
+                                                            width="10" height="1"></td>
+                                                    <td width="90" height="3" valign="top"><img src="../files/90.gif"
+                                                            width="90" height="1"></td>
+                                                    <td width="105" height="3" valign="top"><img src="../files/105.gif"
+                                                            width="105" height="1"></td>
+                                                    <td width="150" height="3" valign="top"><img src="../files/150.gif"
+                                                            width="150" height="1"></td>
+                                                    <td width="136" height="3" valign="top"><img src="../files/136.gif"
+                                                            width="136" height="1"></td>
+                                                    <td width="155" height="3" valign="top"><img src="../files/155.gif"
+                                                            width="155" height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2" valign="bottom" width="2%"><img
+                                                            src="../files/lrj42.gif" width="5" height="40"></td>
+                                                    <td class="item">Local e data</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="caixaInput"><input type="text" name="localdata" size="30"
+                                                            maxlength="35"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="646" colspan="3" height="3" valign="top"><img
+                                                            src="../files/646.gif" height="1" colspan="2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <br>
+                                        <table width="0" cellspacing="0" cellpadding="0" border="0" align="center"
+                                            style="margin-top: 1em;">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="646" align="center"><img src="../files/350.gif"
+                                                            width="350" height="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="300" class="item">
+                                                        <div align="center">Assinatura autorizada da empresa</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="50"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="303" height="3" valign="top"><img src="../files/303.gif"
+                                                            width="303" height="1"></td>
+                                                    <td width="20" height="3" valign="top"><img
+                                                            src="../files/imgpxlbra.gif" width="20" height="1"></td>
+                                                    <td width="200" height="3" valign="top"><img src="../files/200.gif"
+                                                            width="200" height="1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="303" class="item" align="center">Assinatura do contador e
+                                                        CRC</td>
+                                                    <td width="5" height="3" valign="top"><img
+                                                            src="../files/imgpxlbra.gif" width="5" height="1"></td>
+                                                    <td width="303" class="item" align="center">CPF do contador</td>
+                                                    <td width="113" height="3" valign="top"><img
+                                                            src="../files/imgpxlbra.gif" width="113" height="1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="100%" cellspacing="50" cellpadding="0" border="0" align="center"
+                                            style="margin-top: -1.5em; margin-bottom: -0.5em;">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="100%" class="item">
+                                                        <div align="center">ATENÇÃO: Dispensada se optante pelo Simples
+                                                            e faturamento até 4.800.000,00</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <br>
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="item">Os dados abaixo são de preenchimento da
+                                                        agência.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" class="item">Visita à empresa</td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="bottom" width="10"><img src="../files/lrj38.gif"
+                                                            width="5" height="19" margin:0;=""></td>
+                                                    <td class="caixaInput" width="90"><input type="radio"
+                                                            name="visitaaempresa" value="Sim" class="radioBranco">Sim
+                                                    </td>
+                                                    <td class="caixaInput"><input type="radio" name="visitaaempresa"
+                                                            value="N�o" class="radioBranco">Não</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="646" colspan="4" height="3" valign="top"><img
+                                                            src="../files/646.gif" height="1" colspan="2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0"
+                                            style="padding-top: 3em;">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="500">
+                                                        <div align="center"><img src="../files/500.gif" width="500"
+                                                                height="1"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="300" class="item">
+                                                        <div align="center">Comitê de Crédito da Agência - Carimbo(s) e
+                                                            Assinatura(s)</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="20"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0" class="rodape">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="item">Mod. 0.71.167-7 - Jul/18 - SISBB 18201 - pvb</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table width="646" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="hidden" name="METHOD"><input type="hidden"
+                                                            name="FILENAME" value="/fmc/frm/fw0711677_1.jsp"><input
+                                                            type="button" class="botao" value="Salvar"
+                                                            onclick="javascript: saveForm();">&nbsp;
+                                                        <input type="button" name="Ok" value=" Imprimir Colorido "
+                                                            onclick="javaScript:document.form.param.value=&#39;&#39;;javascript:document.form.submit();"
+                                                            class="Botao">&nbsp;
+                                                        <input type="button" name="Pb"
+                                                            value=" Imprimir Preto&amp;Branco "
+                                                            onclick="javaScript:document.form.param.value=&#39;Pb&#39;;javascript:document.form.submit();"
+                                                            class="botao"
+                                                            title="Clique aqui para imprimir um formul�rio preto e branco.">&nbsp;
+                                                        <input type="button" name="Limpar" value="Limpar"
+                                                            onclick="javascript:document.form.reset()"
+                                                            class="Botao">&nbsp;
+                                                        <input type="button" name="teste" value="Ajuda"
+                                                            onclick="fw0707004a_1()" class="Botao">&nbsp;
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function saveForm() {
+            var actionForm = document.form.action;
+            var methodForm = document.form.method;
+            var targetForm = document.form.target;
+            document.form.action = '/fmc/frmGen.jsp';
+            document.form.method = 'post';
+            document.form.target = '_self';
+            document.form.METHOD.value = 'save';
+            document.form.submit();
+            setTimeout('', 1000);
+            document.form.action = actionForm;
+            document.form.method = methodForm;
+            document.form.target = targetForm;
+            document.form.METHOD.value = '';
+        }
+    </script>
+
+</body>
+
+</html>
