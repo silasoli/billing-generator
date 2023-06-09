@@ -60,6 +60,13 @@ function generateValues(totalValue, percentage, numMonths) {
     values.push(Math.round(randomValue * 100) / 100);
   }
 
+  const sumValues = values.reduce((a, b) => a + b, 0);
+  const adjustment = (percentageValue - sumValues) / numMonths;
+
+  for (let i = 0; i < numMonths; i++) {
+    values[i] += adjustment;
+  }
+
   return values;
 }
 
