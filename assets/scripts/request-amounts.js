@@ -45,8 +45,14 @@ function handleSubmit(event) {
     0
   );
 
+  openBillingBBPage(); 
   
   console.log(sumCard, sumCheckTicket);  
+}
+
+function openBillingBBPage() {
+  const url = "billing-bb.html";
+  window.open(url, "_blank"); 
 }
 
 function generateValues(totalValue, percentage, numMonths) {
