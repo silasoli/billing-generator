@@ -174,8 +174,7 @@
     </style>
 </head>
 
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
-    onload="main(&#39;protocolo&#39;), timeOut();">
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <table width="656" border="0" cellspacing="0" cellpadding="0" align="center">
         <tbody>
             <tr>
@@ -317,8 +316,7 @@
                                                 <tr>
                                                     <td class="caixaInput"><input type="text" name="mesAno1"
                                                             id="mesAno1" size="18"
-                                                            onkeypress="return mask(true, event, this, &#39;##/####&#39;);"
-                                                            onblur="validaCampos(&#39;mesAno1&#39;)"></td>
+                                                           ></td>
                                                     <td class="caixaInput"><input type="text" name="a_vista1"
                                                             id="a_vista1" size="18" style="text-align:right" 0></td>
                                                     <td class="caixaInput"><input type="text" name="a_prazo1"
@@ -1030,11 +1028,9 @@
                                                             type="button" class="botao" value="Salvar"
                                                             onclick="javascript: saveForm();">&nbsp;
                                                         <input type="button" name="Ok" value=" Imprimir Colorido "
-                                                            onclick="javaScript:document.form.param.value=&#39;&#39;;javascript:document.form.submit();"
                                                             class="Botao">&nbsp;
                                                         <input type="button" name="Pb"
                                                             value=" Imprimir Preto&amp;Branco "
-                                                            onclick="javaScript:document.form.param.value=&#39;Pb&#39;;javascript:document.form.submit();"
                                                             class="botao"
                                                             title="Clique aqui para imprimir um formul�rio preto e branco.">&nbsp;
                                                         <input type="button" name="Limpar" value="Limpar"
@@ -1055,7 +1051,7 @@
             </tr>
         </tbody>
     </table>
-    <script>
+    <!-- <script>
         function saveForm() {
             var actionForm = document.form.action;
             var methodForm = document.form.method;
@@ -1071,8 +1067,8 @@
             document.form.target = targetForm;
             document.form.METHOD.value = '';
         }
-    </script>
-
+    </script> -->
+    <script type="text/javascript" src="../assets/scripts/billing-bb.js"></script>
 </body>
 
 </html>

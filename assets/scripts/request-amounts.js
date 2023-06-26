@@ -33,26 +33,26 @@ function handleSubmit(event) {
     months.length
   );
 
-  console.log(card, checkTicket);
+  // const sumCard = card.reduce(
+  //   (accumulator, currentValue) => accumulator + currentValue,
+  //   0
+  // );
 
-  const sumCard = card.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  );
+  // const sumCheckTicket = checkTicket.reduce(
+  //   (accumulator, currentValue) => accumulator + currentValue,
+  //   0
+  // );
 
-  const sumCheckTicket = checkTicket.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  );
+  localStorage.setItem("formValues", JSON.stringify(formValues));
+  localStorage.setItem("card", card);
+  localStorage.setItem("checkTicket", checkTicket);
 
-  openBillingBBPage(); 
-  
-  console.log(sumCard, sumCheckTicket);  
+  openBillingBBPage();
 }
 
 function openBillingBBPage() {
   const url = "billing-bb.html";
-  window.open(url, "_blank"); 
+  window.open(url, "_blank");
 }
 
 function generateValues(totalValue, percentage, numMonths) {
