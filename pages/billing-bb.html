@@ -171,6 +171,14 @@
             letter-spacing: 0px;
             font-size: 10pt;
         }
+
+        #carimbo{
+            z-index: 2;
+            position: absolute;
+            width: 300px;
+            height: 120px;
+            top: 825px;
+        }
     </style>
 </head>
 
@@ -219,7 +227,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="caixaInput"><input type="text" name="empresa" size="70"
-                                                            maxlength="60"></td>
+                                                            maxlength="60" id="empresa"></td>
                                                     <td class="caixaInput"><input type="text" name="cnpj" id="cnpj"
                                                             size="16"></td>
                                                 </tr>
@@ -791,11 +799,14 @@
                                                     <td class="item" width="30%">Boleto/Título - %</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="caixaInput"><input type="text" name="cartao" size="18"
+                                                    <td class="caixaInput"><input type="text" name="cartao"
+                                                            id="cartao" size="18"
                                                             maxlength="3"></td>
-                                                    <td class="caixaInput"><input type="text" name="cheque" size="18"
+                                                    <td class="caixaInput"><input type="text" name="cheque"
+                                                            id="cheque" size="18"
                                                             maxlength="3"></td>
-                                                    <td class="caixaInput"><input type="text" name="boleto" size="18"
+                                                    <td class="caixaInput"><input type="text" name="boleto"
+                                                            id="boleto" size="18"
                                                             maxlength="3"></td>
                                                 </tr>
                                                 <tr>
@@ -824,7 +835,8 @@
                                                     <td class="item"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="caixaInput"><input name="prazoMedio" size="18"
+                                                    <td class="caixaInput"><input name="prazoMedio" id="prazoMedio"
+                                                            size="18"
                                                             maxlength="3"
                                                             type="text"></td>
                                                 </tr>
@@ -891,7 +903,8 @@
                                                     <td class="item">Local e data</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="caixaInput"><input type="text" name="localdata" size="30"
+                                                    <td class="caixaInput"><input type="text" name="localdata"
+                                                            id="localdata" size="30"
                                                             maxlength="35"></td>
                                                 </tr>
                                                 <tr>
@@ -938,6 +951,7 @@
                                                 <tr>
                                                     <td width="303" class="item" align="center">Assinatura do contador e
                                                         CRC</td>
+                                                          <img id="carimbo"  src="../assets/img/CARIMBO_MANUEAL-removebg-preview.png">
                                                     <td width="5" height="3" valign="top"><img
                                                             src="../files/imgpxlbra.gif" width="5" height="1"></td>
                                                     <td width="303" class="item" align="center">CPF do contador</td>
